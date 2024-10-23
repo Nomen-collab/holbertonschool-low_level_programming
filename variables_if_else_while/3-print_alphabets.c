@@ -1,28 +1,19 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Description: Prints the alphabet in lowercase, then uppercase followed by a new line
- * Return: Always 0 (Success)
- */
 int main(void)
 {
 	char ch;
 
-	/* Imprimer l'alphabet en minuscules */
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		putchar(ch);
 	}
 
-	/* Imprimer l'alphabet en majuscules */
 	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
 		putchar(ch);
 	}
 
-	/* Imprimer un saut de ligne */
 	putchar('\n');
 
 	return (0);
