@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point of the program
+ * Description: Prints the alphabet in lowercase, excluding 'q' and 'e'
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char ch;
