@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
 * main - Entry point
 * Description: Generates random number and prints the last digit
