@@ -1,12 +1,18 @@
 #include "main.h"
 
 /**
- * main - point d'entr√e du programme
- * print alphabet
- * Return : 0 (Success)
+ * print_alphabet - Imprime l'alphabet en minuscules
+ *
+ * Descritpion: Cette fonction utilise _putchar pour imprimer
+ * chaque lettre de l'alphabet en minuscules + une nouvelle ligne
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		_putchar(letter);
+	}
+	_putchar('\n');
 }
