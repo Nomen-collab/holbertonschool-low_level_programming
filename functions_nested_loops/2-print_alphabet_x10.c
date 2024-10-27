@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *	print_alphabet_x10 - affiche 10 fois l'alphabet en minuscules suivi d'une nouvelle ligne
+ *	print_alphabet_x10 - affiche 10 fois
  */
 void	print_alphabet_x10(void)
 {
