@@ -1,18 +1,12 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * add - adds two integers and returns the resul.
+ * add - Adds two integers and returns the result.
  *
- * Return : 0 (Success)
+ * Return: The sum of a and b.
  */
-int main(void)
+int add(int a, int b)
 {
-	int result;
-
-	result = add(3, 5);
-	_putchar('0' + result);
-	_putchar('\n');
-
-	return (0);
+	return (a + b);
 }
+
