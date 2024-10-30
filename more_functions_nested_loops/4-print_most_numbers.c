@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * print_most_numbers: affiche les chiffres de 0 a 9 sauf 2 et 4.
+ * print_most_numbers - imprime les chiffres de 0 a 9 sauf 2 et 4.
  *
- * Return : Rien.
+ * Return: void
  */
 void print_most_numbers(void)
 {
-	char c;
+	int i;
 
-	char numbers[] = "01356789";
-
-	for (int i = 0; i < 8; i++)
+	for (i = 0; i < 10; i++)
 	{
-		_putchar(numbers[i]);
+		if (i != 2 && i != 4)
+		{
+			_putchar(i + '0');
+		}
 	}
-	_putchar('\n");
+	_putchar('\n');
 }
+
