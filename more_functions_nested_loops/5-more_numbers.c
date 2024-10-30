@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * more_numbers: imprime 10 fois les nombres de 0 a 14.
+ * more_numbers - imprime 10 fois les nombres de 0 a 14.
+ *
+ * Description: cette fonction imprime les chiffres de 0 a 14 dix foi
  *
  * Return: void
  */
