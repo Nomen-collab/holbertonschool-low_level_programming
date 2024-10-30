@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_diagonal - Draws a diagonal line in the terminal.
+ * print_diagonal - Draws a diagonal line on the terminal.
  * @n: The number of times the character '\' should be printed.
  *
- * Return: void.
+ * Description: If n is 0 or less, the function only prints a new line.
  */
 void print_diagonal(int n)
 {
-	int i = 0;
+	int i, j;
 
 	if (n <= 0)
 	{
@@ -16,19 +16,14 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		while (i < n)
+		for (i = 0; i < n; i++)
 		{
-			int spaces = 0;
-
-			while (spaces < i)
+			for (j = 0; j < i; j++)
 			{
-				_putchar('	');
-				spaces++;
+				_putchar(' ');
 			}
-
 			_putchar('\\');
 			_putchar('\n');
-			i++;
 		}
 	}
 }
