@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * puts2 - Affiche un caractère sur deux d'une cha�ne
+ * puts2 - Affiche un caractère sur deux d'une chaî
  * @str: Pointeur vers la chaîne de caractèr a afficher
  */
-void puts2(char *str)
+void	puts2(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -14,5 +14,9 @@ void puts2(char *str)
 		if (i % 2 == 0)
 		{
 			_putchar(str[i]);
+		}
+		i++;
+	}
+	_putchar('\n');
 }
 
