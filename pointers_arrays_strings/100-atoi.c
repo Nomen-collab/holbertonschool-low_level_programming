@@ -8,15 +8,19 @@
  */
 int _atoi(char *s)
 {
-	int i, sign, result, num_started;
+	int i, sign, result;
 
 	i = 0;
 	sign = 1;
 	result = 0;
-	num_started = 0;
 
 	while (s[i] != '\0')
 	{
+		if (s[i] == ' ')
+		{
+			i++;
+			continue;
+		}
 		if (s[i] == '-')
 		{
 			sign *= -1;
@@ -27,19 +31,15 @@ int _atoi(char *s)
 		}
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
-			num_started = 1;
 			result = result * 10 + (s[i] - '0');
-			if (sign == -1 && result > 0)
-			{
-				result = -result;
-			}
 		}
-		else if (num_started)
+		else if (result > 0)
 		{
 			break;
 		}
 		i++;
 	}
-	return (result);
+
+	return (result * sign);
 }
 
