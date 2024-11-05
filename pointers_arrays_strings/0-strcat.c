@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strcat - Concatène deux cha�e de carateres
+ * _strcat - Concatène deux chaînese caractères
  * @dest: Chaîne de destination
- * @src: Chaîne source a ajouter a la fin de dest
+ * @src: Chaîne sorce a ajoute a la fin de dest
  *
  * Return: Pointeur vers la chaîne de destination `dest`
  */
