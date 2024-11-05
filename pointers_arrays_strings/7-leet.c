@@ -9,12 +9,13 @@
 char *leet(char *str)
 {
 	int i = 0;
+	int j;
 	char map[] = "aAeEoOtTlL";
 	char replace[] = "4433007711";
 
 	while (str[i] != '\0')
 	{
-		for (int j = 0; map[j] != '\0'; j++)
+		for (j = 0; map[j] != '\0'; j++)
 		{
 			if (str[i] == map[j])
 			{
