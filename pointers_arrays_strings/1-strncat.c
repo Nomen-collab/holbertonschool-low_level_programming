@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strncat - Concatèn deux  cha�nes en utilisant au max n octets de src
+ * _strncat - Concatène deux chaînes en utilisant au maximum n octets de src
  * @dest: Chaîne de destination
- * @src: Chaîne sourcea ajoutea la fin de dest
- * @n: Nombre maximal de caractèresa utiliser de src
+ * @src: Chaîne source à ajouter à la fin de dest
+ * @n: Nombre maximal de caractères à utiliser de src
  *
  * Return: Pointeur vers la chaîne de destination `dest`
  */
