@@ -3,30 +3,18 @@
 #include <stdlib.h>
 
 /**
- * create_array - creates an array of chars, and initializes it with
- * a specific char
- * @size: size of array
- * @c: character to initialize with
+ * malloc_checked -  allocates memory using malloc.
+ * @b: size
  *
- * Return: Pointer
+ * Return: Pointer to allocated memory or normal process termination
+ * with a status value of 98
  */
-char *create_array(unsigned int size, char c)
+void *malloc_checked(unsigned int b)
 {
-	unsigned int i;
-	char *s;
+	void *p;
 
-	if (size <= 0)
-		return (0);
-
-	s = malloc(sizeof(char) * size);
-
-	if (s == 0)
-		return (0);
-
-	for (i = 0; i < size; i++)
-		*(s + i) = c;
-
-	*(s + i) = '\0';
-
-	return (s);
+	p = malloc(b);
+	if (p == 0)
+		exit(98);
+	return (p);
 }
